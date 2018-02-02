@@ -10,7 +10,16 @@ const app = express()
 app.use(
 	'/graphql', 
 	bodyParser.json(), 
-	graphqlExpress({ schema })
+	graphqlExpress({ 
+		schema,
+		formatError: (error) => {
+			return {
+				codigo: 'A43',
+				nombre: error.name,
+				mensaje: error.message
+			}
+		}
+	})
 )
 
 app.use(
