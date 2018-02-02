@@ -3,6 +3,8 @@ const bodyParser = require('body-parser')
 const { graphqlExpress, graphiqlExpress } = require('graphql-server-express') //es un middleware
 const schema = require('./schema')
 
+require('./db/setup')
+
 const app = express()
 
 app.use(
