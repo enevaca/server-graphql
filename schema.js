@@ -43,13 +43,13 @@ const resolvers = {
 	Query: {
 		cursos: () => {
 			return [{
-				id: 1,
 				titulo: 'Curso de GraphQL',
-				descripcion: 'Aprendiendo GraphQL'
+				descripcion: 'Aprendiendo GraphQL',
+				id: 1
 			}, {
-				id: 2,
 				titulo: 'Curso de PHP',
-				descripcion: 'Aprendiendo PHP'
+				descripcion: 'Aprendiendo PHP',
+				id: 2
 			}
 			]
 		}
@@ -57,9 +57,16 @@ const resolvers = {
 	Curso: {
 		profesor: () => {
 			return {
-				nombre: 'Noel'
+				nombre: 'Noel',
+				nacionalidad: 'Boliviana'
 			}
-		}
+		},
+		comentarios: () => {
+      		return [{
+          		nombre: 'Esnor',
+          		cuerpo: '¡Buen video!'
+        	}]
+    	}
 	}
 }
 
