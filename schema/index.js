@@ -15,6 +15,12 @@ const rootQuery = `
     profesorAdd(profesor: NuevoProfesor): Profesor
     profesorEdit(profesorId: Int!, profesor: ProfesorEditable): Profesor
     profesorDelete(profesorId: Int!): Profesor
+    cursoAdd(curso: NuevoCurso): Curso
+    cursoEdit(cursoId: Int!, curso: CursoEditable): Curso
+    cursoDelete(cursoId: Int!): Curso
+    comentarioAdd(comentario: NuevoComentario): Comentario
+    comentarioEdit(comentarioId: Int!, comentario: ComentarioEditable): Comentario
+    comentarioDelete(comentarioId: Int!): Comentario
   }
 `
 
