@@ -1,0 +1,16 @@
+.App {
+  text-align: center;
+}
+
+.Curso {
+  background-color: #fede00;
+  width: 20em;
+  margin: 1em auto;
+  padding: 1em;
+  border-radius: .3em;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
